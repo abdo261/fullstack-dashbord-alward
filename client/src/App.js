@@ -11,11 +11,11 @@ import { useSelector } from "react-redux";
 import PageNoteFound from "./pages/PageNoteFound";
 
 const App = () => {
-  const { user } = useSelector((state) => state.auth);
+  // const { user } = useSelector((state) => state.auth);
   return (
     <>
       <Routes>
-        {user ? (
+        {/* {user ? ( */}
           <>
             {homeRoutes}
             {centerRoutes}
@@ -26,12 +26,12 @@ const App = () => {
             {subjectRoutes}
             <Route path="/auth/login" element={<Navigate to="/"/>} />
           </>
-        ) : (
+        {/* ) : ( */}
           <>
           {loginRoutes}
            <Route path="/*" element={<Navigate to="/auth/login"/>} />
           </>
-        )}
+        {/* )} */}
         <Route path="*" element={<PageNoteFound/>}/>
       </Routes>
     </>

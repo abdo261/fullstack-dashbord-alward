@@ -93,7 +93,7 @@ const List = () => {
     <>
       <div className="flex justify-start ">
         <div className="flex justify-between items-center w-full">
-          <h1 className="text-3xl font-semibold underline">Centres</h1>{" "}
+          <h1 className="text-3xl font-semibold underline">Centres</h1>
           <Tooltip
             color="foreground"
             content="actualisé"
@@ -172,7 +172,7 @@ const List = () => {
                     <div className="w-full flex justify-end">
                       {centres && (
                         <Chip variant="flat" color="success" size="lg">
-                          Total {filteredCentres.length}
+                          Total {items.length}
                         </Chip>
                       )}
                     </div>
